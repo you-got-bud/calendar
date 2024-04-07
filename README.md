@@ -9,6 +9,17 @@ pnpx shadcn-ui init
 pnpm add @you-got-bud/calendar
 ```
 
+### `tailwind.config.js`
+```javascript
+  content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './theme/**/*.{ts,tsx}',
+    './node_modules/@you-got-bud/calendar/dist/**/*.js'
+  ]
+```
+
 ## Usage
 
 ```tsx
