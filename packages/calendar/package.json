@@ -1,0 +1,28 @@
+{
+  "name": "@you-got-bud/calendar",
+  "description": "A calendar component for react built with tailwindcss and shadcn/ui",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "clean": "rimraf dist .turbo"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "dayjs": "^1.11.10",
+    "lucide-react": "^0.365.0",
+    "tailwind-merge": "^2.2.2",
+    "tailwind-variants": "^0.2.1"
+  }
+}
