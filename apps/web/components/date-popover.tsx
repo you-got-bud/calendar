@@ -1,10 +1,9 @@
 'use client'
-import {DatePicker} from '@you-got-bud/calendar'
-import {DatesRangeValue} from '@you-got-bud/calendar/dist/types'
+import {DatePicker, DatesRangeValue} from '@you-got-bud/calendar'
 import dayjs from 'dayjs'
 import {useMemo, useState} from 'react'
-import {Button} from '../components/ui/button'
-import {Popover, PopoverContent, PopoverTrigger} from '../components/ui/popover'
+import {Button} from './ui/button'
+import {Popover, PopoverContent, PopoverTrigger} from './ui/popover'
 
 export function DatePopover(): JSX.Element {
   const [dates, setDates] = useState<DatesRangeValue>([
