@@ -5,10 +5,10 @@ import {DatePicker} from '@you-got-bud/calendar'
 import dayjs from 'dayjs'
 
 export function DisplayCalendar() {
-  const isMobile = useMediaQuery('(max-width: 640px)')
+  const isDesktop = useMediaQuery('(min-width: 640px)')
   return (
     <DatePicker
-      numberOfColumns={isMobile ? 1 : 2}
+      numberOfColumns={isDesktop ? 2 : 1}
       type="range"
       defaultValue={
         [

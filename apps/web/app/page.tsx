@@ -58,7 +58,7 @@ export default function Page() {
           <DisplayCalendar />
         </div>
       </div>
-      <section className="container flex flex-col justify-center items-center py-16 mt-24">
+      <section className="container flex flex-col justify-center items-center py-6 md:py-16 md:mt-24 mt-3">
         <ul className="grid grid-cols-1 gap-6 md:grid-cols-3 md:divide-x divide-border list-none mt-auto">
           <li className="flex flex-col md:px-4">
             <h3 className="text-center text-xl font-bold">
