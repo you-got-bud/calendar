@@ -1,8 +1,10 @@
 'use client'
+import {docsConfig} from '@/config/docs'
 import {cn} from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import {usePathname} from 'next/navigation'
+import {MobileNav} from './mobile-nav'
 import {ThemeMenu} from './theme-menu'
 
 export function Header() {
@@ -10,7 +12,8 @@ export function Header() {
   return (
     <header className="flex items-center justify-between backdrop-blur-md sticky top-0 z-10 border-b border-border">
       <div className="flex items-center gap-4 container mx-auto flex-1 py-4">
-        <Link href="/" className="flex items-center gap-3">
+        <MobileNav />
+        <Link href="/" className="md:flex items-center gap-3 hidden">
           <Image
             width={50}
             height={50}
@@ -18,22 +21,23 @@ export function Header() {
             className="dark:invert"
             alt="Logo"
           />
-          <div className="text-lg font-mono hidden md:block">
-            @you-got-bud/calendar
-          </div>
+          <div className="text-lg font-mono">@you-got-bud/calendar</div>
         </Link>
-        <nav className="flex items-center gap-4">
-          <Link
-            href="/docs/calendar"
-            className={cn(
-              'transition-colors hover:text-foreground/80',
-              pathname?.startsWith('/docs/components')
-                ? 'text-foreground'
-                : 'text-foreground/60'
-            )}
-          >
-            Docs
-          </Link>
+        <nav className="md:flex items-center gap-4 hidden">
+          {docsConfig.mainNav.map(item => (
+            <Link
+              href={item.href}
+              key={item.href}
+              className={cn(
+                'transition-colors hover:text-foreground/80',
+                item.matchingPaths.some(path => pathname?.startsWith(path))
+                  ? 'text-foreground'
+                  : 'text-foreground/60'
+              )}
+            >
+              {item.title}
+            </Link>
+          ))}
         </nav>
         <ThemeMenu className="ms-auto" />
       </div>
