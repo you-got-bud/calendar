@@ -1,8 +1,16 @@
+import {cn} from '@/lib/utils'
 import type {Metadata} from 'next'
-import {Inter} from 'next/font/google'
+import {ThemeProvider} from 'next-themes'
+import {Inter, JetBrains_Mono} from 'next/font/google'
+import {Toaster} from 'sonner'
+import {Header} from '../components/header'
 import './globals.css'
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({subsets: ['latin'], variable: '--font-sans'})
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+})
 
 export const metadata: Metadata = {
   title: 'Create Turborepo',
@@ -15,8 +23,23 @@ export default function RootLayout({
   children: React.ReactNode
 }): JSX.Element {
   return (
-    <html lang="en" className="dark">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={cn(inter.variable, jetBrainsMono.variable)}
+      suppressHydrationWarning
+    >
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Toaster />
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
