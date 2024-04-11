@@ -40,7 +40,7 @@ export default async function handler() {
           <p
             className="text-center text-lg text-gray-500"
             style={{
-              color: '#666',
+              color: '#e0e0e0',
               fontSize: '32px',
               textAlign: 'center',
             }}
