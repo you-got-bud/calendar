@@ -1,9 +1,7 @@
 import {ImageResponse} from '@vercel/og'
 import Image from 'next/image'
 
-export const config = {
-  runtime: 'edge',
-}
+export const runtime = 'edge'
 
 export default async function handler() {
   return new ImageResponse(
