@@ -17,11 +17,10 @@ export default async function handler() {
         }}
       >
         <div className="text-center flex flex-col justify-center items-center">
-          <img src="/logo.png" width={100} height={100} alt="Logo" />
           <h2 className="bg-gradient from-zinc-200 to-zinc-500 bg-clip-text text-center text-4xl font-bold leading-tight text-transparent mb-3">
             A fast, flexible, server component friendly date-picker for react.
           </h2>
-          <p className="text-center text-lg text-gray-500 md:text-xl lg:text-2xl">
+          <p className="text-center text-lg text-gray-500">
             Themed with @shadcn/ui and customizable down to the last element.
           </p>
         </div>
