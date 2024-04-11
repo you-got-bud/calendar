@@ -27,18 +27,16 @@ export default async function handler() {
           <h2
             style={{
               textAlign: 'center',
-              fontSize: '60px',
+              fontSize: '48px',
               fontWeight: 'bold',
-              lineHeight: '54px',
+              lineHeight: '36px',
               letterSpacing: '-0.05em',
               color: '#fefefe',
             }}
           >
-            A fast, flexible, server component <br /> friendly date-picker for
-            react.
+            A fast, flexible, server component friendly date-picker for react.
           </h2>
           <p
-            className="text-center text-lg text-gray-500"
             style={{
               color: '#e0e0e0',
               fontSize: '32px',
