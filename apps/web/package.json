@@ -21,6 +21,7 @@
     "@repo/ui": "workspace:*",
     "@tailwindcss/typography": "^0.5.12",
     "@types/mdx": "^2.0.12",
+    "@vercel/og": "^0.6.2",
     "@you-got-bud/calendar": "workspace:*",
     "autoprefixer": "^10.4.19",
     "bright": "^0.8.5",
