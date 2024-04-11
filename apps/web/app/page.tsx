@@ -1,6 +1,5 @@
+import {DisplayCalendar} from '@/components/display-calendar'
 import {Spotlight} from '@/components/ui/spotlight'
-import {DatePicker} from '@you-got-bud/calendar'
-import dayjs from 'dayjs'
 import Link from 'next/link'
 import Balancer from 'react-wrap-balancer'
 
@@ -56,16 +55,7 @@ export default function Page() {
       <div className="container flex flex-col mt-12">
         <div className="border bg-white/10 dark:bg-black/10 backdrop-blur-md text-black dark:text-white rounded-lg border-border mx-auto p-4">
           <h3 className="text-xl font-bold mb-6">Select a date</h3>
-          <DatePicker
-            numberOfColumns={2}
-            type="range"
-            defaultValue={
-              [
-                dayjs().subtract(1, 'week').subtract(3, 'days').toDate(),
-                dayjs().toDate(),
-              ] as const
-            }
-          />
+          <DisplayCalendar />
         </div>
       </div>
       <section className="container flex flex-col justify-center items-center py-16 mt-24">
