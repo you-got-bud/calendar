@@ -6,7 +6,7 @@ import Balancer from 'react-wrap-balancer'
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="container bg-grid-black/[.02] dark:bg-grid-white/[.02]">
+      <div className="container bg-grid-black/[.02] dark:bg-grid-white/[.02] relative overflow-hidden">
         <section className="text-center flex flex-col justify-center items-center h-full">
           <h2 className="mt-16 bg-gradient-to-br from-zinc-500 to-zinc-900 dark:from-zinc-200 dark:to-zinc-500 bg-clip-text text-center text-3xl font-bold leading-tight text-transparent md:text-4xl lg:text-6xl lg:leading-tight mb-3 lg:mt-40 md:mt-24">
             <Balancer>
