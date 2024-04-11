@@ -6,7 +6,7 @@
       "outputs": ["dist"]
     },
     "@you-got-bud/calendar-web#build": {
-      "dependsOn": ["^@you-got-bud/calendar#build"],
+      "dependsOn": ["@you-got-bud/calendar#build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "build": {
