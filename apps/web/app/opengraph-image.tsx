@@ -27,9 +27,9 @@ export default async function handler() {
           <h2
             style={{
               textAlign: 'center',
-              fontSize: '36px',
+              fontSize: '60px',
               fontWeight: 'bold',
-              lineHeight: '24px',
+              lineHeight: '54px',
               letterSpacing: '-0.05em',
               color: '#fefefe',
             }}
@@ -40,7 +40,7 @@ export default async function handler() {
             className="text-center text-lg text-gray-500"
             style={{
               color: '#666',
-              fontSize: '18px',
+              fontSize: '32px',
               textAlign: 'center',
             }}
           >
