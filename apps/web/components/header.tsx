@@ -13,7 +13,7 @@ import {buttonVariants} from './ui/button'
 export function Header() {
   const pathname = usePathname()
   return (
-    <header className="flex items-center justify-between backdrop-blur-md sticky top-0 z-10 border-b border-border">
+    <header className="flex items-center justify-between backdrop-blur-md sticky top-0 border-b border-border z-30">
       <div className="flex items-center gap-4 container mx-auto flex-1 py-4 justify-between">
         <MobileNav />
         <Link href="/" className="md:flex items-center gap-3 hidden">
