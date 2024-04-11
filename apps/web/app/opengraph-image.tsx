@@ -26,11 +26,12 @@ export default async function handler() {
         >
           <h2
             style={{
-              background: 'linear-gradient(to bottom right, #f2f2f2, #fafafa)',
-              backgroundClip: 'text',
               textAlign: 'center',
               fontSize: '36px',
               fontWeight: 'bold',
+              lineHeight: 1.25,
+              letterSpacing: '-0.05em',
+              color: '#fefefe',
             }}
           >
             A fast, flexible, server component friendly date-picker for react.
