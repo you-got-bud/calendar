@@ -11,7 +11,7 @@ export function DemoArea({className, centered, children}: DemoAreaProps) {
     <div
       className={cn(
         className,
-        'rounded-t-md flex',
+        'rounded-t-md flex min-h-40',
         !centered && 'flex-1',
         centered && 'flex justify-center items-center'
       )}

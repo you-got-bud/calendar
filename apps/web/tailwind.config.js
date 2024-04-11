@@ -22,6 +22,7 @@ const config = {
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
+    './demos/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
     '../../packages/calendar/**/*.{ts,tsx}',
   ],

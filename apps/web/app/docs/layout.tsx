@@ -14,9 +14,24 @@ export default function DocsLayout({children}: DocsLayoutProps) {
             <DocsSidebarNav
               items={[
                 {
+                  title: 'Introduction',
+                  items: [
+                    {
+                      title: 'Getting Started',
+                      href: '/docs/getting-started',
+                      items: [],
+                    },
+                  ],
+                },
+                {
                   title: 'Components',
                   items: [
                     {title: 'Calendar', href: '/docs/calendar', items: []},
+                    {
+                      title: 'Date Picker',
+                      href: '/docs/date-picker',
+                      items: [],
+                    },
                   ],
                 },
               ]}

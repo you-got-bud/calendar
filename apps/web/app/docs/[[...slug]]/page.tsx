@@ -2,10 +2,10 @@ import {allDocs} from 'contentlayer/generated'
 import {ChevronRight} from 'lucide-react'
 import {notFound} from 'next/navigation'
 
+import {Mdx} from '@/components/mdx'
+import {cn} from '@/lib/utils'
 import type {Metadata} from 'next'
 import Balancer from 'react-wrap-balancer'
-import {Mdx} from '../../../components/mdx'
-import {cn} from '../../../lib/utils'
 
 interface DocPageProps {
   params: {

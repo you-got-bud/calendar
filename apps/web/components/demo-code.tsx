@@ -14,7 +14,10 @@ export type DemoCodeProps = Omit<
 export function DemoCode({code, ...props}: DemoCodeProps) {
   return (
     <div className="relative">
-      <Code className={cn('text-sm font-mono', props.className)} {...props}>
+      <Code
+        className={cn('text-sm font-mono !m-0 !rounded-b-md', props.className)}
+        {...props}
+      >
         {code}
       </Code>
       <CopyButton code={code!} />
