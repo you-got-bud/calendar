@@ -34,7 +34,8 @@ export default async function handler() {
               color: '#fefefe',
             }}
           >
-            A fast, flexible, server component friendly date-picker for react.
+            A fast, flexible, server component <br /> friendly date-picker for
+            react.
           </h2>
           <p
             className="text-center text-lg text-gray-500"
