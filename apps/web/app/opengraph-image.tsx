@@ -16,7 +16,10 @@ export default async function handler() {
           backgroundColor: 'black',
         }}
       >
-        <div className="text-center flex flex-col justify-center items-center">
+        <div
+          style={{display: 'flex'}}
+          className="text-center flex flex-col justify-center items-center"
+        >
           <h2 className="bg-gradient from-zinc-200 to-zinc-500 bg-clip-text text-center text-4xl font-bold leading-tight text-transparent mb-3">
             A fast, flexible, server component friendly date-picker for react.
           </h2>
