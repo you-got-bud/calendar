@@ -29,7 +29,7 @@ export default async function handler() {
               textAlign: 'center',
               fontSize: '36px',
               fontWeight: 'bold',
-              lineHeight: 1.25,
+              lineHeight: '24px',
               letterSpacing: '-0.05em',
               color: '#fefefe',
             }}
