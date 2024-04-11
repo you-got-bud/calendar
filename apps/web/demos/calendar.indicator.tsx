@@ -14,7 +14,7 @@ export function CalendarWithIndicator() {
         return (
           <div className="relative">
             {day === 16 && (
-              <div className="absolute -top-4 -right-4 bg-primary flex items-center justify-center rounded-full text-primary-foreground h-5 w-5">
+              <div className="absolute -top-4 -right-4 bg-primary flex items-center justify-center rounded-full text-primary-foreground h-[1.35rem] w-[1.35rem] text-xs">
                 12
               </div>
             )}
