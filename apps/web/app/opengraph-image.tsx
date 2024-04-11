@@ -27,9 +27,9 @@ export default async function handler() {
           <h2
             style={{
               textAlign: 'center',
-              fontSize: '48px',
+              fontSize: '36px',
               fontWeight: 'bold',
-              lineHeight: '36px',
+              lineHeight: '24px',
               letterSpacing: '-0.05em',
               color: '#fefefe',
             }}
