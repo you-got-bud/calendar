@@ -3,7 +3,7 @@
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
     "@you-got-bud/calendar#build": {
-      "outputs": ["dist"]
+      "outputs": ["dist/**"]
     },
     "@you-got-bud/calendar-web#build": {
       "dependsOn": ["@you-got-bud/calendar#build"],
@@ -11,7 +11,7 @@
     },
     "build": {
       "dependsOn": ["^@you-got-bud/calendar-web#build"],
-      "outputs": ["dist", ".next/**", "!.next/cache/**"]
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
     "lint": {
       "dependsOn": ["^lint"]
