@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'you-got-bud/calendar',
-  url: 'https://calendar.yougotbud.com',
+  url: 'https://calendar-web-psi.vercel.app',
   description:
     'A beautiful calendar/date picker. Themed with @shadcn/ui and customizable down to the last element.',
   links: {
