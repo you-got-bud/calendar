@@ -17,13 +17,32 @@ export default async function handler() {
         }}
       >
         <div
-          style={{display: 'flex'}}
-          className="text-center flex flex-col justify-center items-center"
+          style={{
+            display: 'flex',
+            textAlign: 'center',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
         >
-          <h2 className="bg-gradient from-zinc-200 to-zinc-500 bg-clip-text text-center text-4xl font-bold leading-tight text-transparent mb-3">
+          <h2
+            style={{
+              background: 'linear-gradient(to bottom right, #f2f2f2, #fafafa)',
+              backgroundClip: 'text',
+              textAlign: 'center',
+              fontSize: '36px',
+              fontWeight: 'bold',
+            }}
+          >
             A fast, flexible, server component friendly date-picker for react.
           </h2>
-          <p className="text-center text-lg text-gray-500">
+          <p
+            className="text-center text-lg text-gray-500"
+            style={{
+              color: '#666',
+              fontSize: '18px',
+              textAlign: 'center',
+            }}
+          >
             Themed with @shadcn/ui and customizable down to the last element.
           </p>
         </div>
