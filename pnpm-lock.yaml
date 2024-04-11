@@ -53,6 +53,9 @@ importers:
       '@types/mdx':
         specifier: ^2.0.12
         version: 2.0.12
+      '@you-got-bud/calendar':
+        specifier: workspace:*
+        version: link:../../packages/calendar
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.31)
@@ -144,9 +147,6 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.19
         version: 18.2.19
-      '@you-got-bud/calendar':
-        specifier: workspace:*
-        version: link:../../packages/calendar
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
