@@ -4,6 +4,7 @@ import {cn} from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import {usePathname} from 'next/navigation'
+import {CommandMenu} from './command-menu'
 import {MobileNav} from './mobile-nav'
 import {ThemeMenu} from './theme-menu'
 
@@ -11,7 +12,7 @@ export function Header() {
   const pathname = usePathname()
   return (
     <header className="flex items-center justify-between backdrop-blur-md sticky top-0 z-10 border-b border-border">
-      <div className="flex items-center gap-4 container mx-auto flex-1 py-4">
+      <div className="flex items-center gap-4 container mx-auto flex-1 py-4 justify-between">
         <MobileNav />
         <Link href="/" className="md:flex items-center gap-3 hidden">
           <Image
@@ -39,7 +40,10 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <ThemeMenu className="ms-auto" />
+        <div className="flex gap-3 items-center flex-1 max-w-sm ms-auto justify-end">
+          <CommandMenu />
+          <ThemeMenu />
+        </div>
       </div>
     </header>
   )
