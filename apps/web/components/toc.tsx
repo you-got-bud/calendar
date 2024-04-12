@@ -31,8 +31,8 @@ export function DashboardTableOfContents({toc}: TocProps) {
   }
 
   return (
-    <div className="space-y-2">
-      <p className="font-medium">On This Page</p>
+    <div className="space-y-1">
+      <p className="font-medium px-2">On This Page</p>
       <Tree tree={toc} activeItem={activeHeading} />
     </div>
   )
@@ -84,11 +84,11 @@ function Tree({tree, level = 1, activeItem}: TreeProps) {
     <ul className={cn('m-0 list-none', {'pl-4': level !== 1})}>
       {tree.items.map((item, index) => {
         return (
-          <li key={index} className={cn('mt-0 pt-2')}>
+          <li key={index} className={cn('mt-0')}>
             <a
               href={item.url}
               className={cn(
-                'inline-block no-underline transition-colors hover:text-foreground',
+                'inline-block no-underline transition-colors hover:text-foreground focus-visible:outline-none focus-visible:bg-black/10 focus-visible:dark:bg-white/10 px-2 py-1 rounded-md',
                 item.url === `#${activeItem}`
                   ? 'font-medium text-foreground'
                   : 'text-muted-foreground'

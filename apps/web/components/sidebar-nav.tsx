@@ -56,14 +56,14 @@ export function DocsSidebarNavItems({
   pathname,
 }: DocsSidebarNavItemsProps) {
   return items?.length ? (
-    <div className="grid grid-flow-row auto-rows-max text-sm">
+    <div className="grid grid-flow-row auto-rows-max text-sm overflow-visible">
       {items.map((item, index) =>
         item.href && !item.disabled ? (
           <Link
             key={index}
             href={item.href}
             className={cn(
-              'group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline',
+              'group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline  focus-visible:outline-none focus-visible:bg-black/10 focus-visible:dark:bg-white/10',
               item.disabled && 'cursor-not-allowed opacity-60',
               pathname === item.href
                 ? 'font-medium text-foreground'
