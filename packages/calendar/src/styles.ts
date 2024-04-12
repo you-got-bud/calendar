@@ -13,13 +13,13 @@ export const calendar = tv({
       'user-select-none flex h-[var(--size)] flex-1 cursor-pointer [font-size:var(--font-size)] items-center justify-center rounded-md hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
     monthListCell: 'data-[with-spacing]:p-[0.5px] p-0',
     monthListControl:
-      'text-foreground h-[var(--size)] w-[calc((var(--size)*7/3)+.09375rem)] rounded-md hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
+      'text-foreground [font-size:var(--font-size)] h-[var(--size)] w-[calc((var(--size)*7/3)+.09375rem)] rounded-md hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
     inputGroup:
       'border-input placeholder:text-muted-foreground has-[:focus-visible]:ring-ring inline-flex h-9 w-full items-center rounded-md border bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium has-[:disabled]:cursor-not-allowed has-[disabled]:opacity-50 has-[:focus-visible]:outline-none has-[:focus-visible]:ring-1',
     yearList: 'table-fixed border-collapse',
     yearListCell: 'data-[with-spacing]:p-[0.5px] p-0',
     yearListControl:
-      'text-foreground h-[var(--size)] w-[calc((var(--size)*7/3)+.09375rem)] rounded-md hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
+      'text-foreground [font-size:var(--font-size)] h-[var(--size)] w-[calc((var(--size)*7/3)+.09375rem)] rounded-md hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
     calendarHeader: 'mb-1 flex',
     levelsGroup: 'flex gap-4',
     datePickerControl:
