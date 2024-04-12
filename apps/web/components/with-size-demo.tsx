@@ -24,7 +24,7 @@ export function WithSizeDemo() {
         }
       >
         <SelectTrigger className="w-[100px] absolute right-4 top-4">
-          <SelectValue placeholder="Size" />
+          <SelectValue className="j" placeholder="Size" />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
