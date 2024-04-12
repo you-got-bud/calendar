@@ -20,8 +20,9 @@ export function Header() {
           <Image
             width={50}
             height={50}
+            quality={100}
             src="/logo.png"
-            className="dark:invert"
+            className="invert dark:invert-0 rounded-lg"
             alt="Logo"
           />
           <div className="text-lg font-mono">@you-got-bud/calendar</div>
