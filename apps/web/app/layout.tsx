@@ -21,13 +21,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(siteConfig.url),
   description: siteConfig.description,
-  keywords: [
-    'Next.js',
-    'React',
-    'Tailwind CSS',
-    'Server Components',
-    'Radix UI',
-  ],
+  keywords: ['Next.js', 'React', 'Tailwind CSS', 'Server Components'],
   creator: 'you-got-bud',
   openGraph: {
     type: 'website',

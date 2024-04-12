@@ -44,7 +44,7 @@ const components = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './theme/**/*.{ts,tsx}',
-    '../../node_modules/@you-got-bud/calendar/dist/**/*.js'
+    './node_modules/@you-got-bud/calendar/dist/**/*.js'
   ],
   // ... the rest of your config
 }`}
