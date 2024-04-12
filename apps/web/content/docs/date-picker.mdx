@@ -5,6 +5,20 @@ description: Use the date picker component to create date pickers that match you
 
 <DatePickerDemo />
 
+## Alternative selection modes
+
+### Range
+
+Set the prop `mode` to `range` to enable the range selection mode.
+
+<DateRangeDemo />
+
+### Multiple
+
+Set the prop `mode` to `multiple` to enable the multiple selection mode.
+
+<DatePickerMultipleDemo />
+
 ## Controlled state
 
 The following example uses a state value to keep track of the date range and renders it in a popover.
@@ -28,3 +42,10 @@ You can set the minimum and maximum dates that can be selected using the `minDat
 The `size` prop can be used to change the size of the date picker. Sizes xs, sm, md, lg, and xl are available.
 
 <DatePickerWithSizeDemo />
+
+## Change the month and year item formats
+
+Using the `monthsListFormat` and `yearsListFormat` props, you can change the format of the month and year items.
+Refer to the [dayjs documentation](https://day.js.org/docs/en/display/format) for more information on the formatting options.
+
+<MonthYearFormatDemo />

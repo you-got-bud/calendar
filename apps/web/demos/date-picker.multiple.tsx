@@ -6,15 +6,15 @@ const code = `import {DatePicker} from '@you-got-bud/calendar'
 
 export function DatePicker() {
   return (
-    <DatePicker type="range" />
+    <DatePicker type="multiple" />
   )
 }`
 
 function Demo() {
-  return <DatePicker type="range" />
+  return <DatePicker type="multiple" />
 }
 
-export const dateRangePicker: DemoType = {
+export const datePickerMultiple: DemoType = {
   type: 'code',
   centered: true,
   contained: true,
