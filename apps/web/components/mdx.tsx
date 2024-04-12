@@ -1,10 +1,11 @@
 import {useMDXComponent} from 'next-contentlayer/hooks'
 
 import {calendarHideOutsideDates} from '@/demos/calendar.hide-outside-dates'
-import {twoColumnDatePicker} from '@/demos/calendar.two-column'
+import {purpleWeekendCalendar} from '@/demos/calendar.overriding-styles'
 import {weekPicker} from '@/demos/calendar.week-picker'
 import {datePicker} from '@/demos/date-picker'
 import {dateRangePickerInPopover} from '@/demos/date-picker.controlled-date-range'
+import {twoColumnDatePicker} from '@/demos/date-picker.two-column'
 import {staticCalendar} from 'demos/calendar.indicator'
 import {Demo} from './demo'
 import {DemoCode} from './demo-code'
@@ -53,6 +54,7 @@ const components = {
   WeekPickerDemo: () => <Demo demo={weekPicker} />,
   CalendarHideOutsideDatesDemo: () => <Demo demo={calendarHideOutsideDates} />,
   DatePickerDemo: () => <Demo demo={datePicker} />,
+  PurpleWeekendCalendar: () => <Demo demo={purpleWeekendCalendar} />,
   DateRangeInPopoverDemo: () => <Demo demo={dateRangePickerInPopover} />,
   DatePickerTwoColumnDemo: () => <Demo demo={twoColumnDatePicker} />,
 }

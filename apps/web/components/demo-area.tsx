@@ -6,11 +6,13 @@ export interface DemoAreaProps {
   className?: string
   centered?: boolean
   desktopOnly?: boolean
+  contained?: boolean
   children: React.ReactNode
 }
 export function DemoArea({
   className,
   desktopOnly,
+  contained,
   centered,
   children,
 }: DemoAreaProps) {
@@ -18,6 +20,7 @@ export function DemoArea({
     <>
       <div
         className={cn(
+          'bg-dot-black/10 dark:bg-dot-white/10',
           className,
           'rounded-t-md flex min-h-40',
           !centered && 'flex-1',
@@ -25,7 +28,13 @@ export function DemoArea({
           desktopOnly && 'hidden md:flex'
         )}
       >
-        {children}
+        {contained ? (
+          <div className="bg-white dark:bg-black border-border border m-6 p-3 rounded-lg">
+            {children}
+          </div>
+        ) : (
+          children
+        )}
       </div>
       <p
         className={cn(

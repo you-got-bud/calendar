@@ -73,6 +73,7 @@ function Demo() {
 export const weekPicker: DemoType = {
   type: 'code',
   centered: true,
+  contained: true,
   component: Demo,
   code: <DemoCode lang="tsx" title="week-picker.tsx" code={code} />,
   lang: 'tsx',

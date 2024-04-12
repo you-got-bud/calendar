@@ -11,16 +11,13 @@ export function DatePicker() {
 }`
 
 function Demo() {
-  return (
-    <div className="mx-auto py-6">
-      <DatePicker type="range" numberOfColumns={2} />
-    </div>
-  )
+  return <DatePicker type="range" numberOfColumns={2} />
 }
 
 export const twoColumnDatePicker: DemoType = {
   desktopOnly: true,
   type: 'code',
+  contained: true,
   centered: true,
   component: Demo,
   code: <DemoCode code={code} lang="tsx" title="date-range-picker.tsx" />,

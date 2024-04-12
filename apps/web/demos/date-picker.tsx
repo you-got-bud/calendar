@@ -11,15 +11,12 @@ export function DatePicker() {
 }`
 
 function Demo() {
-  return (
-    <div className="mx-auto py-6">
-      <DatePicker />
-    </div>
-  )
+  return <DatePicker />
 }
 
 export const datePicker: DemoType = {
   type: 'code',
+  contained: true,
   centered: true,
   component: Demo,
   code: <DemoCode code={code} lang="tsx" title="date-picker.tsx" />,

@@ -11,11 +11,7 @@ export function DatePicker() {
 }`
 
 function Demo() {
-  return (
-    <div className="mx-auto py-6">
-      <DatePicker type="range" />
-    </div>
-  )
+  return <DatePicker type="range" />
 }
 
 export const dateRangePicker: DemoType = {

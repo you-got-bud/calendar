@@ -8,10 +8,12 @@ export function Demo({demo}: {demo: DemoType}) {
     desktopOnly,
     centered,
     demoAreaClassName,
+    contained,
   } = demo
   return (
     <CodeDemo
       code={code}
+      contained={contained}
       desktopOnly={desktopOnly}
       centered={centered}
       demoAreaClassName={demoAreaClassName}

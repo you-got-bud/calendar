@@ -34,6 +34,7 @@ function Demo() {
 
 export const staticCalendar: DemoType = {
   type: 'code',
+  contained: true,
   centered: true,
   component: Demo,
   code: <DemoCode code={code} lang="tsx" title="calendar-static.tsx" />,

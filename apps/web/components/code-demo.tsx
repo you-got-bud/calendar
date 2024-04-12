@@ -14,6 +14,7 @@ export interface CodeDemoProps
 export function CodeDemo({
   demoAreaClassName,
   children,
+  contained,
   desktopOnly,
   centered,
   ...codeProps
@@ -21,6 +22,7 @@ export function CodeDemo({
   return (
     <DemoRoot>
       <DemoArea
+        contained={contained}
         desktopOnly={desktopOnly}
         centered={centered}
         className={demoAreaClassName}

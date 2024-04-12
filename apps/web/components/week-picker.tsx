@@ -41,25 +41,22 @@ export function WeekPicker() {
   const [value, setValue] = useState<Date | null>(null)
 
   return (
-    <div className="mx-auto max-w-xs my-4">
-      <Calendar
-        getDayProps={date => {
-          const isHovered = isInWeekRange(date, hovered)
-          const isSelected =
-            isInWeekRange(date, value) && [1, 0].includes(date.getDay())
-          const isInRange =
-            isHovered || isSelected || isInWeekRange(date, value)
-          return {
-            onMouseEnter: () => setHovered(date),
-            onMouseLeave: () => setHovered(null),
-            inRange: isInRange,
-            firstInRange: isInRange && date.getDay() === 1,
-            lastInRange: isInRange && date.getDay() === 0,
-            selected: isSelected,
-            onClick: () => setValue(date),
-          }
-        }}
-      />
-    </div>
+    <Calendar
+      getDayProps={date => {
+        const isHovered = isInWeekRange(date, hovered)
+        const isSelected =
+          isInWeekRange(date, value) && [1, 0].includes(date.getDay())
+        const isInRange = isHovered || isSelected || isInWeekRange(date, value)
+        return {
+          onMouseEnter: () => setHovered(date),
+          onMouseLeave: () => setHovered(null),
+          inRange: isInRange,
+          firstInRange: isInRange && date.getDay() === 1,
+          lastInRange: isInRange && date.getDay() === 0,
+          selected: isSelected,
+          onClick: () => setValue(date),
+        }
+      }}
+    />
   )
 }

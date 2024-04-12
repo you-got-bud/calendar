@@ -13,16 +13,13 @@ export function CalendarWithoutOutsideDates() {
 `
 
 function Demo() {
-  return (
-    <div className="mx-auto py-6">
-      <Calendar hideOutsideDates />
-    </div>
-  )
+  return <Calendar hideOutsideDates />
 }
 
 export const calendarHideOutsideDates: DemoType = {
   type: 'code',
   centered: true,
+  contained: true,
   component: Demo,
   code: (
     <DemoCode
