@@ -7,6 +7,7 @@ import {datePicker} from '@/demos/date-picker'
 import {datePickerWeekdayStart} from '@/demos/date-picker-weekday-start'
 import {dateRangePickerInPopover} from '@/demos/date-picker.controlled-date-range'
 import {dateRangePicker} from '@/demos/date-picker.date-range'
+import {datePickerDefaultDate} from '@/demos/date-picker.default-date'
 import {datePickerInForm} from '@/demos/date-picker.in-form'
 import {datePickerLocale} from '@/demos/date-picker.locale'
 import {minMaxDate} from '@/demos/date-picker.min-max-date'
@@ -72,6 +73,7 @@ const components = {
   DatePickerTwoColumnDemo: () => <Demo demo={twoColumnDatePicker} />,
   DatePickerInFormDemo: () => <Demo demo={datePickerInForm} />,
   DatePickerWithSizeDemo: () => <Demo demo={withSize} />,
+  DatePickerDefaultDateDemo: () => <Demo demo={datePickerDefaultDate} />,
   DatePickerSingleDateInRangeDemo: () => <Demo demo={singleDateInRange} />,
   DatePickerLocaleDemo: () => <Demo demo={datePickerLocale} />,
   DatePickerLocaleWeekdayStartDemo: () => (
