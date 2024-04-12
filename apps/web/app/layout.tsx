@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     siteName: siteConfig.name,
   },
+  verification: {
+    google: 'OjpJ6M5gGJ1rkHJkEpVIUBhk9vQy88rq1_yCbIyeLUs',
+  },
   twitter: {
     card: 'summary_large_image',
     title: siteConfig.name,
