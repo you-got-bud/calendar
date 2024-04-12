@@ -7,18 +7,24 @@ export interface CodeDemoProps
   extends Omit<DemoCodeProps, 'code'>,
     DemoAreaProps {
   demoAreaClassName?: string
+  desktopOnly?: boolean
   code: ReactNode
 }
 
 export function CodeDemo({
   demoAreaClassName,
   children,
+  desktopOnly,
   centered,
   ...codeProps
 }: CodeDemoProps) {
   return (
     <DemoRoot>
-      <DemoArea centered={centered} className={demoAreaClassName}>
+      <DemoArea
+        desktopOnly={desktopOnly}
+        centered={centered}
+        className={demoAreaClassName}
+      >
         {children}
       </DemoArea>
       {codeProps.code}

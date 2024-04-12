@@ -1,6 +1,7 @@
 import {useMDXComponent} from 'next-contentlayer/hooks'
 
 import {calendarHideOutsideDates} from '@/demos/calendar.hide-outside-dates'
+import {twoColumnDatePicker} from '@/demos/calendar.two-column'
 import {weekPicker} from '@/demos/calendar.week-picker'
 import {datePicker} from '@/demos/date-picker'
 import {dateRangePickerInPopover} from '@/demos/date-picker.controlled-date-range'
@@ -53,6 +54,7 @@ const components = {
   CalendarHideOutsideDatesDemo: () => <Demo demo={calendarHideOutsideDates} />,
   DatePickerDemo: () => <Demo demo={datePicker} />,
   DateRangeInPopoverDemo: () => <Demo demo={dateRangePickerInPopover} />,
+  DatePickerTwoColumnDemo: () => <Demo demo={twoColumnDatePicker} />,
 }
 
 interface MdxProps {
