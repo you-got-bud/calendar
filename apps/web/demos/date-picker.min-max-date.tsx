@@ -3,6 +3,7 @@ import {DemoType} from '@/components/types'
 import {DatePicker} from '@you-got-bud/calendar'
 import dayjs from 'dayjs'
 
+const title = 'date-picker.min-max-date.tsx'
 const code = `import {DatePicker} from '@you-got-bud/calendar'
 
 export function MinMaxDateExample() {
@@ -30,6 +31,7 @@ export const minMaxDate: DemoType = {
   contained: true,
   centered: true,
   component: Demo,
-  code: <DemoCode code={code} lang="tsx" title="calendar-static.tsx" />,
+  title,
+  code: <DemoCode code={code} lang="tsx" title={title} />,
   lang: 'tsx',
 }

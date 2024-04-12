@@ -2,8 +2,8 @@ import {DemoCode} from '@/components/demo-code'
 import {DemoType} from '@/components/types'
 import {WithSizeDemo} from '@/components/with-size-demo'
 
-const code = `
-'use client'
+const title = 'date-picker.with-size.tsx'
+const code = `'use client'
 
 import {DatePicker, DatePickerProps} from '@you-got-bud/calendar'
 import {useState} from 'react'
@@ -57,6 +57,7 @@ export const withSize: DemoType = {
   centered: true,
   contained: true,
   component: Demo,
-  code: <DemoCode code={code} lang="tsx" title="with-size.tsx" />,
+  title,
+  code: <DemoCode code={code} lang="tsx" title={title} />,
   lang: 'tsx',
 }

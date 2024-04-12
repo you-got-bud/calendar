@@ -2,6 +2,7 @@ import {DemoCode} from '@/components/demo-code'
 import {DemoType} from '@/components/types'
 import {Calendar} from '@you-got-bud/calendar'
 
+const title = 'calendar-without-outside-dates.tsx'
 const code = `import {Calendar} from '@you-got-bud/calendar'
 
 export function CalendarWithoutOutsideDates() {
@@ -19,12 +20,7 @@ export const calendarHideOutsideDates: DemoType = {
   centered: true,
   contained: true,
   component: Demo,
-  code: (
-    <DemoCode
-      code={code}
-      lang="tsx"
-      title="calendar-without-outside-dates.tsx"
-    />
-  ),
+  title,
+  code: <DemoCode code={code} lang="tsx" title={title} />,
   lang: 'tsx',
 }

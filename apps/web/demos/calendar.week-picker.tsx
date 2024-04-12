@@ -2,6 +2,7 @@ import {DemoCode} from '@/components/demo-code'
 import {DemoType} from '@/components/types'
 import {WeekPicker} from '@/components/week-picker'
 
+const title = 'week-picker.tsx'
 const code = `'use client'
 
 import {Calendar} from '@you-got-bud/calendar'
@@ -74,7 +75,8 @@ export const weekPicker: DemoType = {
   type: 'code',
   centered: true,
   contained: true,
+  title,
   component: Demo,
-  code: <DemoCode lang="tsx" title="week-picker.tsx" code={code} />,
+  code: <DemoCode lang="tsx" title={title} code={code} />,
   lang: 'tsx',
 }

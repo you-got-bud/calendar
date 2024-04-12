@@ -2,6 +2,7 @@ import {DemoCode} from '@/components/demo-code'
 import {DemoType} from '@/components/types'
 import {CalendarWithIndicator} from '../components/calendar-with-indicator'
 
+const title = 'calendar-static.tsx'
 const code = `'use client'
 import {Calendar} from '@you-got-bud/calendar'
 
@@ -36,7 +37,8 @@ export const staticCalendar: DemoType = {
   type: 'code',
   contained: true,
   centered: true,
+  title,
   component: Demo,
-  code: <DemoCode code={code} lang="tsx" title="calendar-static.tsx" />,
+  code: <DemoCode code={code} lang="tsx" title={title} />,
   lang: 'tsx',
 }

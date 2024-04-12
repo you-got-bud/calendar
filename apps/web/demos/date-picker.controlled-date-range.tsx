@@ -2,6 +2,7 @@ import {DateRangeInPopover} from '@/components/date-range-in-popover'
 import {DemoCode} from '@/components/demo-code'
 import {DemoType} from '@/components/types'
 
+const title = 'date-range-picker-in-popover.tsx'
 const code = `'use client'
 
 import {Button} from '@/components/ui/button'
@@ -46,6 +47,7 @@ export const dateRangePickerInPopover: DemoType = {
   type: 'code',
   centered: true,
   component: Demo,
-  code: <DemoCode code={code} lang="tsx" title="date-range-picker.tsx" />,
+  title,
+  code: <DemoCode code={code} lang="tsx" title={title} />,
   lang: 'tsx',
 }

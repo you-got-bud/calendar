@@ -2,6 +2,7 @@ import {DemoCode} from '@/components/demo-code'
 import {DemoType} from '@/components/types'
 import {Calendar} from '@you-got-bud/calendar'
 
+const title = 'calendar-purple-weekends.tsx'
 const code = `import {Calendar} from '@you-got-bud/calendar'
 
 export function PurpleWeekends() {
@@ -31,6 +32,7 @@ export const purpleWeekendCalendar: DemoType = {
   contained: true,
   centered: true,
   component: Demo,
-  code: <DemoCode code={code} lang="tsx" title="calendar.tsx" />,
+  title,
+  code: <DemoCode code={code} lang="tsx" title={title} />,
   lang: 'tsx',
 }

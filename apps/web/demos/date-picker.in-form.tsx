@@ -2,6 +2,7 @@ import {DatePickerInForm} from '@/components/date-picker-in-form'
 import {DemoCode} from '@/components/demo-code'
 import {DemoType} from '@/components/types'
 
+const title = 'birthday-form.tsx'
 const code = `
 'use client'
 
@@ -85,6 +86,7 @@ export const datePickerInForm: DemoType = {
   contained: true,
   centered: true,
   component: Demo,
-  code: <DemoCode code={code} lang="tsx" title="birthday-form.tsx" />,
+  title,
+  code: <DemoCode code={code} lang="tsx" title={title} />,
   lang: 'tsx',
 }
