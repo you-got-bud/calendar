@@ -10,6 +10,7 @@ import {datePickerInForm} from '@/demos/date-picker.in-form'
 import {minMaxDate} from '@/demos/date-picker.min-max-date'
 import {monthYearLabel} from '@/demos/date-picker.month-year-format'
 import {datePickerMultiple} from '@/demos/date-picker.multiple'
+import {singleDateInRange} from '@/demos/date-picker.single-date-range'
 import {twoColumnDatePicker} from '@/demos/date-picker.two-column'
 import {withSize} from '@/demos/date-picker.with-size'
 import {staticCalendar} from 'demos/calendar.indicator'
@@ -69,6 +70,7 @@ const components = {
   DatePickerTwoColumnDemo: () => <Demo demo={twoColumnDatePicker} />,
   DatePickerInFormDemo: () => <Demo demo={datePickerInForm} />,
   DatePickerWithSizeDemo: () => <Demo demo={withSize} />,
+  DatePickerSingleDateInRangeDemo: () => <Demo demo={singleDateInRange} />,
 }
 
 interface MdxProps {
