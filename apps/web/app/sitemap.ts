@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     ...allDocs.map((doc): MetadataRoute.Sitemap[number] => ({
-      url: `${siteConfig.url}/${doc.slug}`,
+      url: `${siteConfig.url}${doc.slug}`,
       lastModified: new Date(),
       changeFrequency: 'hourly',
       priority: 0.8,
