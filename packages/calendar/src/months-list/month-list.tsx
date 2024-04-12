@@ -109,7 +109,9 @@ export const MonthsList = forwardRef<HTMLTableElement, MonthsListProps>(
               }}
               tabIndex={!isMonthInTabOrder ? -1 : 0}
             >
-              {dayjs(month).locale(ctx.locale).format(monthsListFormat)}
+              {dayjs(month)
+                .locale(ctx.getLocale(locale))
+                .format(monthsListFormat)}
             </PickerControl>
           </td>
         )

@@ -71,6 +71,7 @@ export const DatePicker: DatePickerComponent = forwardRef(
       value,
       onChange,
       getDayProps,
+      locale,
       allowSingleDateInRange,
       allowDeselect,
       onMouseLeave,
@@ -104,6 +105,7 @@ export const DatePicker: DatePickerComponent = forwardRef(
     return (
       <Calendar
         ref={ref}
+        locale={locale}
         minLevel="month"
         classNames={classNames}
         size={size}

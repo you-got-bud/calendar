@@ -4,9 +4,11 @@ import {calendarHideOutsideDates} from '@/demos/calendar.hide-outside-dates'
 import {purpleWeekendCalendar} from '@/demos/calendar.overriding-styles'
 import {weekPicker} from '@/demos/calendar.week-picker'
 import {datePicker} from '@/demos/date-picker'
+import {datePickerWeekdayStart} from '@/demos/date-picker-weekday-start'
 import {dateRangePickerInPopover} from '@/demos/date-picker.controlled-date-range'
 import {dateRangePicker} from '@/demos/date-picker.date-range'
 import {datePickerInForm} from '@/demos/date-picker.in-form'
+import {datePickerLocale} from '@/demos/date-picker.locale'
 import {minMaxDate} from '@/demos/date-picker.min-max-date'
 import {monthYearLabel} from '@/demos/date-picker.month-year-format'
 import {datePickerMultiple} from '@/demos/date-picker.multiple'
@@ -71,6 +73,10 @@ const components = {
   DatePickerInFormDemo: () => <Demo demo={datePickerInForm} />,
   DatePickerWithSizeDemo: () => <Demo demo={withSize} />,
   DatePickerSingleDateInRangeDemo: () => <Demo demo={singleDateInRange} />,
+  DatePickerLocaleDemo: () => <Demo demo={datePickerLocale} />,
+  DatePickerLocaleWeekdayStartDemo: () => (
+    <Demo demo={datePickerWeekdayStart} />
+  ),
 }
 
 interface MdxProps {

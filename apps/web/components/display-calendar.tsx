@@ -3,6 +3,7 @@
 import {useMediaQuery} from '@/lib/use-media-query'
 import {DatePicker} from '@you-got-bud/calendar'
 import dayjs from 'dayjs'
+import 'dayjs/locale/es'
 
 export function DisplayCalendar() {
   const isDesktop = useMediaQuery('(min-width: 640px)')
