@@ -64,7 +64,7 @@ export function MobileNav() {
             height={30}
             src="/logo.png"
             alt="Logo"
-            className="mr-2 dark:invert"
+            className="mr-2 invert dark:invert-0"
           />
           <span className="font-bold font-mono">@you-got-bud/calendar</span>
         </MobileLink>
