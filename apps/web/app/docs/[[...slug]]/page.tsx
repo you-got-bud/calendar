@@ -3,6 +3,9 @@ import {ChevronRight} from 'lucide-react'
 import {notFound} from 'next/navigation'
 
 import {Mdx} from '@/components/mdx'
+import {DashboardTableOfContents} from '@/components/toc'
+import {ScrollArea} from '@/components/ui/scroll-area'
+import {getTableOfContents} from '@/lib/toc'
 import {cn} from '@/lib/utils'
 import type {Metadata} from 'next'
 import Balancer from 'react-wrap-balancer'
@@ -60,13 +63,14 @@ export async function generateStaticParams(): Promise<
 
 export default async function DocPage({params}: DocPageProps) {
   const doc = await getDocFromParams({params})
+  const toc = await getTableOfContents(doc!.body.raw)
 
   if (!doc) {
     notFound()
   }
 
   return (
-    <main className="relative py-6 lg:gap-10 lg:py-8">
+    <main className="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
       <div className="mx-auto w-full min-w-0">
         <div className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
           <div className="overflow-hidden text-ellipsis whitespace-nowrap">
@@ -89,6 +93,17 @@ export default async function DocPage({params}: DocPageProps) {
           <Mdx code={doc.body.code} />
         </div>
       </div>
+      {toc && (
+        <div className="hidden text-sm xl:block">
+          <div className="sticky top-16 -mt-10 pt-4">
+            <ScrollArea className="pb-10">
+              <div className="sticky top-16 -mt-10 h-[calc(100vh-3.5rem)] py-12">
+                <DashboardTableOfContents toc={toc} />
+              </div>
+            </ScrollArea>
+          </div>
+        </div>
+      )}
     </main>
   )
 }

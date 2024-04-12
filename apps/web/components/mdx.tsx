@@ -79,7 +79,7 @@ export function Mdx({code}: MdxProps) {
   const Component = useMDXComponent(code)
 
   return (
-    <div className="mdx prose prose-headings:scroll-m-20 dark:prose-invert [&_:where(h2+p)]:mt-[-1rem]">
+    <div className="mdx prose prose-headings:scroll-m-32 dark:prose-invert [&_:where(h2+p)]:mt-[-1rem]">
       <Component components={components} />
     </div>
   )
