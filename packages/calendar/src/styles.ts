@@ -8,7 +8,7 @@ export const calendar = tv({
     dayHead: 'text-muted-foreground pb-[calc(var(--spacing)/2)] capitalize',
     day: 'focus-visible:ring-primary data-[first-in-range]:data-[selected]:text-primary-foreground data-[static]:user-select-auto data-[outside]:text-muted-foreground data-[selected]:bg-primary text-primary-contrast data-[in-range]:bg-primary/10 data-[first-in-range]:bg-primary data-[in-range]:bg-primary/10 data-[in-range]:data-[selected]:bg-primary data-[selected]:text-primary-foreground data-[in-range]:data-[selected]:hover:bg-primary data-[in-range]:data-[selected]:text-primary-foreground inline-flex h-[var(--size)] w-[var(--size)] cursor-pointer items-center justify-center justify-center rounded-md bg-transparent p-0 text-[calc(var(--size)/2.8)] focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[static]:cursor-default data-[first-in-range]:data-[last-in-range]:rounded-md data-[in-range]:rounded-none data-[first-in-range]:rounded-l-md data-[last-in-range]:rounded-r-md data-[weekend]:text-red-500 focus-visible:dark:ring-offset-gray-900 hover:[&:where(:not([data-static],[data-disabled],[data-selected],[data-in-range]))]:bg-gray-100 dark:hover:[&:where(:not([data-static],[data-disabled],[data-selected],[data-in-range]))]:bg-white/10 data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 data-[hidden]:opacity-0',
     calendarHeaderControl:
-      'flex h-[var(--size)] w-[var(--size)] cursor-pointer items-center justify-center rounded-md bg-transparent p-0 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
+      'flex h-[var(--size)] w-[var(--size)] text-[var(--font-size)] cursor-pointer items-center justify-center rounded-md bg-transparent p-0 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
     calendarHeaderLevel:
       'user-select-none flex h-[var(--size)] flex-1 cursor-pointer items-center justify-center rounded-md hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
     monthListCell: 'data-[with-spacing]:p-[0.5px] p-0',
@@ -47,7 +47,7 @@ export const calendar = tv({
         'monthListControl',
         'yearListControl',
       ],
-      class: '[--size:1.875rem]',
+      class: '[--size:1.875rem] [--font-size:0.75rem]',
     },
     {
       size: 'sm',
@@ -60,7 +60,7 @@ export const calendar = tv({
         'monthListControl',
         'yearListControl',
       ],
-      class: '[--size:2.25rem]',
+      class: '[--size:2.25rem] [--font-size:0.875rem]',
     },
     {
       size: 'md',
@@ -73,7 +73,7 @@ export const calendar = tv({
         'monthListControl',
         'yearListControl',
       ],
-      class: '[--size:2.625rem]',
+      class: '[--size:2.625rem] [--font-size:1rem]',
     },
     {
       size: 'lg',
@@ -86,7 +86,7 @@ export const calendar = tv({
         'monthListControl',
         'yearListControl',
       ],
-      class: '[--size:3rem]',
+      class: '[--size:3rem] [--font-size:1.125rem]',
     },
     {
       size: 'xl',
@@ -99,7 +99,7 @@ export const calendar = tv({
         'monthListControl',
         'yearListControl',
       ],
-      class: '[--size:3.375rem]',
+      class: '[--size:3.375rem] [--font-size:1.25rem]',
     },
   ],
 })
