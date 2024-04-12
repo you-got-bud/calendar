@@ -5,6 +5,7 @@ import {purpleWeekendCalendar} from '@/demos/calendar.overriding-styles'
 import {weekPicker} from '@/demos/calendar.week-picker'
 import {datePicker} from '@/demos/date-picker'
 import {dateRangePickerInPopover} from '@/demos/date-picker.controlled-date-range'
+import {minMaxDate} from '@/demos/date-picker.min-max-date'
 import {twoColumnDatePicker} from '@/demos/date-picker.two-column'
 import {staticCalendar} from 'demos/calendar.indicator'
 import {Demo} from './demo'
@@ -54,6 +55,7 @@ const components = {
   WeekPickerDemo: () => <Demo demo={weekPicker} />,
   CalendarHideOutsideDatesDemo: () => <Demo demo={calendarHideOutsideDates} />,
   DatePickerDemo: () => <Demo demo={datePicker} />,
+  MinMaxDateDemo: () => <Demo demo={minMaxDate} />,
   PurpleWeekendCalendar: () => <Demo demo={purpleWeekendCalendar} />,
   DateRangeInPopoverDemo: () => <Demo demo={dateRangePickerInPopover} />,
   DatePickerTwoColumnDemo: () => <Demo demo={twoColumnDatePicker} />,
