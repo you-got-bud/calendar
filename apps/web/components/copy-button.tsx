@@ -1,19 +1,29 @@
 'use client'
 
 import {useCopyToClipboard} from '@/lib/use-copy-to-clipboard'
-import {Clipboard} from 'lucide-react'
+import {track} from '@vercel/analytics/react'
+import {Clipboard, ClipboardCheck} from 'lucide-react'
 import {toast} from 'sonner'
 import {Button} from './ui/button'
 
 interface CopyButtonProps {
   code: string
+  fileName?: string
 }
 
-export function CopyButton({code}: CopyButtonProps) {
+export function CopyButton({code, fileName}: CopyButtonProps) {
   const [value, copy] = useCopyToClipboard()
   function copyText() {
+    track('Copied Code', {
+      fileName: fileName || 'code',
+    })
     copy(code)
-    toast('Copied to clipboard')
+    toast(
+      <div className="flex items-center">
+        <ClipboardCheck className="h-4 w-4 me-2" />
+        Copied to clipboard
+      </div>
+    )
   }
   return (
     <Button

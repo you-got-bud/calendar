@@ -6,10 +6,10 @@ import {CopyButton} from './copy-button'
 
 Code.theme = theme
 
-export type DemoCodeProps = Omit<
-  ComponentProps<typeof Code>,
-  'theme' | 'children'
->
+export interface DemoCodeProps
+  extends Omit<ComponentProps<typeof Code>, 'theme' | 'children' | 'title'> {
+  title: string
+}
 
 export function DemoCode({code, ...props}: DemoCodeProps) {
   return (
@@ -20,7 +20,7 @@ export function DemoCode({code, ...props}: DemoCodeProps) {
       >
         {code}
       </Code>
-      <CopyButton code={code!} />
+      <CopyButton code={code!} fileName={props.title} />
     </div>
   )
 }

@@ -7,6 +7,7 @@ export function Demo({demo}: {demo: DemoType}) {
     code,
     desktopOnly,
     centered,
+    title,
     demoAreaClassName,
     contained,
   } = demo
@@ -17,6 +18,7 @@ export function Demo({demo}: {demo: DemoType}) {
       desktopOnly={desktopOnly}
       centered={centered}
       demoAreaClassName={demoAreaClassName}
+      title={title}
     >
       <Component />
     </CodeDemo>
