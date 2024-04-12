@@ -8,9 +8,7 @@ export function CalendarWithoutOutsideDates() {
   return (
     <Calendar hideOutsideDates />
   )
-}
-
-`
+}`
 
 function Demo() {
   return <Calendar hideOutsideDates />

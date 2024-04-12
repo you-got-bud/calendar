@@ -6,6 +6,7 @@ import {weekPicker} from '@/demos/calendar.week-picker'
 import {datePicker} from '@/demos/date-picker'
 import {dateRangePickerInPopover} from '@/demos/date-picker.controlled-date-range'
 import {dateRangePicker} from '@/demos/date-picker.date-range'
+import {datePickerInForm} from '@/demos/date-picker.in-form'
 import {minMaxDate} from '@/demos/date-picker.min-max-date'
 import {monthYearLabel} from '@/demos/date-picker.month-year-format'
 import {datePickerMultiple} from '@/demos/date-picker.multiple'
@@ -66,6 +67,7 @@ const components = {
   DateRangeDemo: () => <Demo demo={dateRangePicker} />,
   DateRangeInPopoverDemo: () => <Demo demo={dateRangePickerInPopover} />,
   DatePickerTwoColumnDemo: () => <Demo demo={twoColumnDatePicker} />,
+  DatePickerInFormDemo: () => <Demo demo={datePickerInForm} />,
   DatePickerWithSizeDemo: () => <Demo demo={withSize} />,
 }
 
