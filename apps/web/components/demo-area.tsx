@@ -20,7 +20,7 @@ export function DemoArea({
     <>
       <div
         className={cn(
-          'bg-dot-black/20 dark:bg-dot-white/15',
+          'bg-dot-black/20 dark:bg-dot-white/15 relative',
           className,
           'rounded-t-md flex min-h-40',
           !centered && 'flex-1',

@@ -7,6 +7,7 @@ import {datePicker} from '@/demos/date-picker'
 import {dateRangePickerInPopover} from '@/demos/date-picker.controlled-date-range'
 import {minMaxDate} from '@/demos/date-picker.min-max-date'
 import {twoColumnDatePicker} from '@/demos/date-picker.two-column'
+import {withSize} from '@/demos/date-picker.with-size'
 import {staticCalendar} from 'demos/calendar.indicator'
 import {Demo} from './demo'
 import {DemoCode} from './demo-code'
@@ -59,6 +60,7 @@ const components = {
   PurpleWeekendCalendar: () => <Demo demo={purpleWeekendCalendar} />,
   DateRangeInPopoverDemo: () => <Demo demo={dateRangePickerInPopover} />,
   DatePickerTwoColumnDemo: () => <Demo demo={twoColumnDatePicker} />,
+  DatePickerWithSizeDemo: () => <Demo demo={withSize} />,
 }
 
 interface MdxProps {

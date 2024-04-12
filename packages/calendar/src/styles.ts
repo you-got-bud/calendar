@@ -10,7 +10,7 @@ export const calendar = tv({
     calendarHeaderControl:
       'flex h-[var(--size)] w-[var(--size)] text-[var(--font-size)] cursor-pointer items-center justify-center rounded-md bg-transparent p-0 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
     calendarHeaderLevel:
-      'user-select-none flex h-[var(--size)] flex-1 cursor-pointer items-center justify-center rounded-md hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
+      'user-select-none flex h-[var(--size)] flex-1 cursor-pointer text-[var(--font-size)] items-center justify-center rounded-md hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
     monthListCell: 'data-[with-spacing]:p-[0.5px] p-0',
     monthListControl:
       'text-foreground h-[var(--size)] w-[calc((var(--size)*7/3)+.09375rem)] rounded-md hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-white data-[disabled]:cursor-not-allowed data-[disabled]:text-muted-foreground data-[disabled]:opacity-50 dark:hover:bg-white/10 focus-visible:dark:ring-offset-gray-900',
