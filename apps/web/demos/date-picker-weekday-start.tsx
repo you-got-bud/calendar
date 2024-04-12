@@ -19,7 +19,6 @@ function Demo() {
 }
 
 export const datePickerWeekdayStart: DemoType = {
-  desktopOnly: true,
   type: 'code',
   contained: true,
   centered: true,

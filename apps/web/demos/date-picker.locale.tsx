@@ -18,7 +18,6 @@ function Demo() {
 }
 
 export const datePickerLocale: DemoType = {
-  desktopOnly: true,
   type: 'code',
   contained: true,
   centered: true,
