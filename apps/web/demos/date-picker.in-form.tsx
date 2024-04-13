@@ -3,9 +3,7 @@ import {DemoCode} from '@/components/demo-code'
 import {DemoType} from '@/components/types'
 
 const title = 'birthday-form.tsx'
-const code = `
-'use client'
-
+const code = `'use client'
 import {Button} from '@/components/ui/button'
 import {
   Form,
@@ -19,6 +17,7 @@ import {DatePicker} from '@you-got-bud/calendar'
 import dayjs from 'dayjs'
 import {ChevronDown} from 'lucide-react'
 import {useForm} from 'react-hook-form'
+import {toast} from 'sonner'
 import {z} from 'zod'
 
 export const formSchema = z.object({
@@ -32,11 +31,14 @@ export function DatePickerInForm() {
     },
   })
 
+  function onSubmit(data: z.infer<typeof formSchema>) {
+    toast(\`You are \${dayjs().diff(data.birthday, 'year')} years old\`)
+  }
   return (
     <Form {...form}>
       <form
         className="flex flex-col gap-6"
-        onSubmit={form.handleSubmit(data => alert(JSON.stringify(data)))}
+        onSubmit={form.handleSubmit(onSubmit)}
       >
         <FormField
           control={form.control}
@@ -75,7 +77,9 @@ export function DatePickerInForm() {
       </form>
     </Form>
   )
-}`
+}
+
+`
 
 function Demo() {
   return <DatePickerInForm />
